@@ -4,11 +4,17 @@ import (
     "fmt"
 )
 
-func greet(name string) string {
-    return fmt.Sprintf("Hello, %s!", name)
+func add(a, b int) int {
+    var c int
+    var d int
+    c=a
+    d=b
+    e:=c+d
+    return e
 }
 
 func main() {
     fmt.Println("Hello, World!")
-    fmt.Println(greet("Alice"))
+    sum := add(3, 5)
+    fmt.Printf("Sum: %d\n", sum)
 }
